@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: rgb(108, 148, 243);">
+    <!-- Navbar -->
+    <nav style="text-align: center;">
+        <a href="formulirPendaftaran.html">Formulir Pendaftaran</a>
+        <a href="TabelPeserta.html">Tabel Peserta</a>
+    </nav>
+
+    <h1 style="text-align: center; color: rgb(18, 98, 204);">Formulir Pendaftaran</h1>
+    <!-- Form buat isi formulir -->
+     <form>
+        <fieldset class="kotak-dalam">
+            <legend align="center" class="kotak-dalam-legend">Data Pribadi</legend>
+
+            <!-- nama -->
+            <label for="nama">Nama :</label>
+            <input type="text" name="nama" id="nama">
+            <br><br>
+
+            <!-- jenis kelamin -->
+            <label for="gender">Jenis Kelamin</label>
+            <input type="radio" name="gender" id="gender" value="Pria">Pria
+            <input type="radio" name="gender" id="gender" value="Wanita">Wanita
+            <br><br>
+
+            <!-- agama -->
+            <label for="agama">Agama</label>
+            <select id="agama">
+                <optgroup label="Agama Mayoritas">
+                    <option>Islam</option>
+                    <option>Kristen</option>
+                    <option>Katolik</option>
+                </optgroup>
+
+                <optgroup label="Agama Lain">
+                    <option>Hindu</option>
+                    <option>Budha</option>
+                </optgroup>
+            </select>
+            <br><br>
+
+            <!-- tempat lahir -->
+            <label for="tempat_lahir">Tempat Lahir</label>
+            <input type="text" name="tempat_lahir" id="tempat_lahir">
+            <br><br>
+
+            <!-- tanggal lahir -->
+            <label for="tgl_lahir">Tanggal Lahir</label>
+            <input type="date" name="tgl_lahir" id="tgl_lahir">
+            <br><br>
+
+            <!-- alamat -->
+            <label for="alamat">Alamat</label>
+            <br>
+            <textarea cols="30" rows="5" id="alamat"></textarea>
+        </fieldset><br>
+        <fieldset class="kotak-dalam">
+            <legend align="center" class="kotak-dalam-legend">Pendidikan</legend>
+            
+            <!-- SD -->
+            <label for="SD">SD</label>
+            <input type="text" name="SD" id="SD">
+            <label for="masuk">Masuk</label>
+            <input type="date" name="masuk" id="masuk">
+            <label for="keluar">Keluar</label>
+            <input type="date" name="keluar" id="keluar">
+            <br><br>
+
+            <!-- SMP -->
+            <label for="SMP">SMP</label>
+            <input type="text" name="SMP" id="SMP">
+            <label for="masuk">Masuk</label>
+            <input type="date" name="masuk" id="masuk">
+            <label for="keluar">Keluar</label>
+            <input type="date" name="keluar" id="keluar">
+            <br><br>
+
+            <!-- SMA -->
+            <label for="SMA">SMA</label>
+            <input type="text" name="SMA" id="SMA">
+            <label for="masuk">Masuk</label>
+            <input type="date" name="masuk" id="masuk">
+            <label for="keluar">Keluar</label>
+            <input type="date" name="keluar" id="keluar">
+            <br>
+        </fieldset><br>
+        <fieldset class="kotak-dalam">
+            <legend align="center" class="kotak-dalam-legend">Pelatihan</legend>
+            
+            <!-- minat -->
+            <label for="minat">Minat</label>
+            <input type="checkbox" name="minat" id="minat" value="HTML">HTML
+            <input type="checkbox" name="minat" id="minat" value="CSS">CSS
+            <input type="checkbox" name="minat" id="minat" value="JavaScript">JavaScript
+            <input type="checkbox" name="minat" id="minat" value="PHP">PHP
+            <br><br>
+
+            <!-- kompetensi -->
+            <label for="kompetensi">Kompetensi</label>
+            <input type="checkbox" name="minat" id="minat" value="HTML">HTML
+            <input type="checkbox" name="minat" id="minat" value="CSS">CSS
+            <input type="checkbox" name="minat" id="minat" value="JavaScript">JavaScript
+            <input type="checkbox" name="minat" id="minat" value="PHP">PHP
+        </fieldset><br>
+        <fieldset class="kotak-dalam">
+            <legend align="center" class="kotak-dalam-legend">Pelatihan</legend>
+            <label for="jurusan">Pilih Jurusan</label>
+            <select id="jurusan">Jurusan
+                <optgroup label="Teknik">
+                    <option>Teknik Informatika</option>
+                    <option>Teknik Elektro</option>
+                    <option>Teknik Industri</option>
+                    <option>Teknik Sipil</option>
+                </optgroup>
+                
+                <optgroup label="Ekonomi">
+                    <option>Akutansi</option>
+                    <option>Manajemen</option>
+                    <option>Perbankan</option>
+                    <option>Bisnis Digital</option>
+                </optgroup>
+            </select>
+        </fieldset><br>
+        <input type="submit" name="submit" value="Submit">
+        <input type="reset" name="reset" value="Reset">
+     </form>
+</body>
+</html>
